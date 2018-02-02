@@ -1,0 +1,27 @@
+
+      .navbar-brand {
+        color: white;
+      }
+
+      .navbar {
+        border-bottom: 1px solid white;
+        border-radius: 0px;
+        z-index: 2;
+      }
+
+      .dropdown {
+        padding-top: 5px;
+        color: white;
+      }
+
+      .dropdown-menu {
+        /*background-color: transparent;*/
+        background-color: #020120;
+        color: white;
+        border: 1px solid white;
+      }
+
+      .dropdown-menu li a {
+        color: white;
+      }
+

@@ -3,9 +3,11 @@
   background-size: auto;
   background-repeat: no-repeat;
   position: relative;
+  top: -72px;
   border: 2px solid black;
   padding: 25px;
   background-color: #020120;
+  z-index: 0;
 }
 
 .hero h1 {
