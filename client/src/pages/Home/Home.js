@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Background from "../images/lightpollution_heatmap.jpeg"
+import Hero from "../../components/Hero";
+import Background from "../../images/lightpollution_heatmap.jpeg"
 import { Link, Route } from "react-router-dom";
-import Search from "./Search";
+import Search from "../Search";
 
 const Home = props =>
   <div>

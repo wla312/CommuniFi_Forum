@@ -5,20 +5,18 @@ import "./SearchForm.css";
 const SearchForm = props =>
   <form className="search">
     <div className="form-group">
-      <label htmlFor="breed">Breed Name:</label>
+      <label htmlFor="zip">Search by Zip Code:</label>
       <input
         value={props.search}
         onChange={props.handleInputChange}
-        name="breed"
-        list="breeds"
+        name="zip"
+        list="zipss"
         type="text"
         className="form-control"
-        placeholder="Type in a dog breed to begin"
-        id="breed"
+        placeholder="Enter 5-digit US Zip Code to begin"
+        id="zip"
       />
-      {/*<datalist id="zips">
-        {props.zips.map(zip => <option value={zip} key={zip} />)}
-      </datalist>*/}
+
       <button
         type="submit"
         onClick={props.handleFormSubmit}
