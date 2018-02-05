@@ -18,7 +18,7 @@ mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/ispyourself",
+  "mongodb://heroku_3f6zqnm3:hsggctnqdri5rjl187342n8vfp@ds225078.mlab.com:25078/heroku_3f6zqnm3" || "mongodb://localhost/ispyourself",
   {
     useMongoClient: true
   }
