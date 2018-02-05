@@ -22,12 +22,12 @@ class Search extends Component {
 
     // function to get all zip codes (this was the first thing I tested with dummy data)
     // gets a list of all available zip codes and updates this.state.zips
-    // API.getZips()
-    //   .then((res) => {
-    //     console.log('all our zip codes', res)
-    //     this.setState({zips: res.data})
-    // })
-    //   .catch(err => console.log(err));
+    API.getZips()
+      .then((res) => {
+        console.log('all our zip codes', res)
+        this.setState({zips: res.data})
+    })
+      .catch(err => console.log(err));
   }
 
   handleInputChange = event => {
