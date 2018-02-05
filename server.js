@@ -15,9 +15,17 @@ app.use(routes);
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
+
 // Connect to the Mongo DB
+var dbURI = 'mongodb://localhost/ispyourself';
+
+if (process.env.NODE_ENV === 'production') {
+    dbURI = 'mongodb://heroku_3f6zqnm3:hsggctnqdri5rjl187342n8vfp@ds225078.mlab.com:25078/heroku_3f6zqnm3';
+}
+
+
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/ispyourself",
+  process.env.dbURI,
   {
     useMongoClient: true
   }
