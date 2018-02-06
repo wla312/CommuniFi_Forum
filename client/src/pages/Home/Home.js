@@ -9,7 +9,7 @@ const Home = props =>
     <Hero backgroundImage={ Background }>
       <h1>ISPyourself</h1>
       <Link to={`${props.match.url}search`} className="btn btn-default">
-        Search Community-Led ISPs In Your Area
+        {/*Search Community-Led ISPs In Your Area*/} This is a test of deployment
       </Link> {" "}
       <Route exact path={`${props.match.url}search`} component={Search} />
     </Hero>
