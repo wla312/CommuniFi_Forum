@@ -33,7 +33,7 @@ class Search extends Component {
         this.setState({zips: res.data})
     })
       .catch(err => console.log(err));
-  }
+  };
 
   handleInputChange = event => {
     this.setState({ search: event.target.value });

@@ -4,7 +4,7 @@ import App from "./App";
 import "./index.css";
 
 // adding registerServiceWorker to see if it solves deployment issue...
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById("root"));
-registerServiceWorker();
+// registerServiceWorker();
