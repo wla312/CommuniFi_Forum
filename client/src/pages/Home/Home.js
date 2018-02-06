@@ -7,7 +7,7 @@ import Search from "../Search";
 const Home = props =>
   <div>
     <Hero backgroundImage={ Background }>
-      <h1>This is a TEST of DEPLOYMENT</h1>
+      <h1>WHY ISNT THIS CHANGING ON DEPLOYMENT?</h1>
       <Link to={`${props.match.url}search`} className="btn btn-default">
         Search Community-Led ISPs In Your Area
       </Link> {" "}

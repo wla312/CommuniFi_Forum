@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 // This file empties the zipcodes collection and inserts the objects below
 
 mongoose.connect(
-  "mongodb://heroku_3f6zqnm3:hsggctnqdri5rjl187342n8vfp@ds225078.mlab.com:25078/heroku_3f6zqnm3",
+  process.env.MONGODB_URI || "mongodb://localhost/ispyourself",
   {
     useMongoClient: true
   }
