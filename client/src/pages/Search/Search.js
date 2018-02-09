@@ -70,6 +70,7 @@ class Search extends Component {
             {this.state.zips.length ? (
               <List>
                 {this.state.zips.map(zip => (
+<<<<<<< HEAD
                   <ListItem key={zip._id}>
                     <strong>
                       {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative:
@@ -81,6 +82,26 @@ class Search extends Component {
                         </button>
                       </strong>
                     </a>
+=======
+                  <ListItem>{/*key={book._id}*/}
+{
+        (zip.hasCommunityISP)
+          ? <a href={"/search/" + zip.zipCode}>
+                      <strong>{zip.zipCode} has a community ISP initiative  </strong>
+                      <button>
+                        JOIN!
+                      </button>
+                      
+                    </a>
+          : <a href={"/search/" + zip.zipCode}>
+                      <strong>{zip.zipCode} does not have a community ISP initiative  </strong>
+                      <button>
+                        CREATE!
+                      </button>
+                      
+                    </a> 
+      }
+>>>>>>> Development
                   </ListItem>
                 ))}
               </List>
