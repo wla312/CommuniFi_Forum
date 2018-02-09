@@ -1,26 +1,26 @@
       body {
         background-color: white;
       }
-      .navbar-brand {
+  /*    .navbar-brand {
         color: black;
-      }
-      .navbar {
+      }*/
+ /*     .navbar {
         border-bottom: 1px solid black;
         border-radius: 0px;
-      }
-      .dropdown {
+      }*/
+/*      .dropdown {
         padding-top: 5px;
         color: black;
-      }
-      .dropdown-menu {
-        /*background-color: transparent;*/
+      }*/
+      /*.dropdown-menu {
+        background-color: transparent;
         background-color: #020120;
         color: black;
         border: 1px solid black;
-      }
-      .dropdown-menu li a {
+      }*/
+    /*  .dropdown-menu li a {
         color: black;
-      }
+      }*/
 
       #submitBtn{
         margin-top: 20px;

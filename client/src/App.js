@@ -10,7 +10,7 @@ import Resources from "./pages/Resources";
 const App = () =>
   <Router>
     <Wrapper>
-      <Navbar />
+      {/*<Navbar /> */}
       <Route exact path="/" component={Home} />
       <Route exact path="/search" component={Search} />
       <Route exact path="/contact" component={Contact} />
