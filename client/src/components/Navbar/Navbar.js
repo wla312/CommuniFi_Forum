@@ -1,22 +1,90 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () =>
 
-    <nav className="navbar bg-transparent">
-        <a className="navbar-brand" href="/" >ISPyourself</a>
 
-          <div className="dropdown pull-right">
+const Navbar = (props) => {
+
+  console.log('our porps for Navbar', props); 
+
+  let styleToApply;
+
+  const whiteStyle = {
+    navbarBrand: {
+      color: 'white'
+    },
+    navbar: {
+      borderBottom: '1px solid white',
+      borderRadius: '0px',
+      zIndex: 2
+    },
+    dropdown: {
+      paddingTop: '5px',
+      color: 'white'
+    },
+    dropdownMenu: {
+      backgroundColor: '#020120',
+      color: 'white',
+      border: '1px solid white'
+    },
+    dropdownMenuATags: {
+      color: 'white'
+    }
+  }
+
+  const blackStyle = {
+    navbarBrand: {
+      color: 'black'
+    },
+    navbar: {
+      borderBottom: '1px solid black',
+      borderRadius: '0px'
+    },
+    dropdownMenu: {
+      backgroundColor: 'transparent',
+      backgroundColor: 'white',
+      color: 'black',
+      border: '1px solid black'
+    }, 
+    dropdown: {
+      paddingTop: '5px',
+      color: 'black'
+    },
+    dropdownMenuATags: {
+      color: 'black'
+    }
+  }
+
+  if (props.location === 'home') {
+    styleToApply = whiteStyle
+  } else if (props.location ==='resources'){
+    styleToApply = blackStyle
+  } else if (props.location ==='contact'){
+    styleToApply = blackStyle
+  } else if (props.location ==='login'){
+    styleToApply = blackStyle
+  } else if (props.location ==='search'){
+    styleToApply = blackStyle
+  }
+
+  return (
+    <nav style={styleToApply.navbar} className="navbar bg-transparent">
+        <a style={styleToApply.navbarBrand} className="navbar-brand" href="/" >ISPyourself</a>
+          <div style={styleToApply.dropdown} className="dropdown pull-right">
             <span className="glyphicon glyphicon-menu-hamburger btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
-            <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="/">Home</a></li>
-              <li><a href="/search">Search</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Resources</a></li>
+            <ul style={styleToApply.dropdownMenu} className="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><Link style={styleToApply.dropdownMenuATags} to="/">Home</Link></li>
+              <li><Link style={styleToApply.dropdownMenuATags} to="/search">Search</Link></li>
+              <li><Link style={styleToApply.dropdownMenuATags} to="Login">Login</Link></li>
+              <li><Link style={styleToApply.dropdownMenuATags} to="Resources">Resources</Link></li>
+              <li><Link style={styleToApply.dropdownMenuATags} to="/contact">Contact</Link></li>
             </ul>
           </div>
     </nav>
+  );
+}
 
+    
 
 export default Navbar;
