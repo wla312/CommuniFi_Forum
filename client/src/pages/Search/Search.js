@@ -74,14 +74,14 @@ class Search extends Component {
 {
         (zip.hasCommunityISP)
           ? <a href={"/search/" + zip.zipCode}>
-                      <strong>{zip.zipCode} </strong>
+                      <strong>{zip.zipCode} has a community ISP initiative  </strong>
                       <button>
                         JOIN!
                       </button>
                       
                     </a>
           : <a href={"/search/" + zip.zipCode}>
-                      <strong>{zip.zipCode} </strong>
+                      <strong>{zip.zipCode} does not have a community ISP initiative  </strong>
                       <button>
                         CREATE!
                       </button>
