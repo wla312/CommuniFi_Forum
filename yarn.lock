@@ -231,6 +231,10 @@ braces@^2.3.0:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
+breeze@0.4.x:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/breeze/-/breeze-0.4.0.tgz#de70bc3ab235a775f59e7d6ee97f4e9023140571"
+
 bson@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/bson/-/bson-1.0.4.tgz#93c10d39eaa5b58415cbc4052f3e53e562b0b72c"
@@ -512,6 +516,14 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
+dragonfly@0.2.x:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/dragonfly/-/dragonfly-0.2.1.tgz#d2709d0a842c80147be733e209279e0bb5625717"
+
+drip@0.3.x:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/drip/-/drip-0.3.1.tgz#a690a12c0ae2299046558f94cad1475d36746486"
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -685,6 +697,10 @@ fill-range@^4.0.0:
     is-number "^3.0.0"
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
+
+filtr@0.3.x:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/filtr/-/filtr-0.3.0.tgz#957f8382e72a9efd97502150aa8cc6f488f9c62c"
 
 finalhandler@1.1.0:
   version "1.1.0"
@@ -1500,6 +1516,10 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
+oath@0.2.x:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/oath/-/oath-0.2.3.tgz#cd44fc6124fcf9cb65aca60eba05c51f3da0019e"
+
 oauth-sign@~0.8.1:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
@@ -1850,6 +1870,18 @@ safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
+seed@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/seed/-/seed-0.4.4.tgz#750c371289d94527c6eb6541d85a8d81bd93d2f3"
+  dependencies:
+    breeze "0.4.x"
+    dragonfly "0.2.x"
+    drip "0.3.x"
+    filtr "0.3.x"
+    oath "0.2.x"
+    sol "0.3.x"
+    super "0.2.x"
+
 semver-diff@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/semver-diff/-/semver-diff-2.1.0.tgz#4bbb8437c8d37e4b0cf1a68fd726ec6d645d6d36"
@@ -1986,6 +2018,10 @@ sntp@1.x.x:
   dependencies:
     hoek "2.x.x"
 
+sol@0.3.x:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/sol/-/sol-0.3.0.tgz#99ded0367e5d58b4c5bf4f873260a7a1ea8fd611"
+
 source-map-resolve@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.5.1.tgz#7ad0f593f2281598e854df80f19aae4b92d7a11a"
@@ -2105,6 +2141,10 @@ strip-eof@^1.0.0:
 strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
+
+super@0.2.x:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/super/-/super-0.2.3.tgz#a6695c1dce00ff58432a63e8b9ce268932b42c61"
 
 supports-color@^0.2.0:
   version "0.2.0"
