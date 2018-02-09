@@ -71,12 +71,23 @@ class Search extends Component {
               <List>
                 {this.state.zips.map(zip => (
                   <ListItem>{/*key={book._id}*/}
-                    {/*<a href={"/books/" + book._id}>*/}
-                      <strong>
-                        {zip.zipCode} has community ISP: {zip.hasCommunityISP.toString()} {/*by {book.author}*/}
-                      </strong>
-                    {/*</a>*/}
-                    {/*<DeleteBtn />*/}
+{
+        (zip.hasCommunityISP)
+          ? <a href={"/search/" + zip.zipCode}>
+                      <strong>{zip.zipCode} </strong>
+                      <button>
+                        JOIN!
+                      </button>
+                      
+                    </a>
+          : <a href={"/search/" + zip.zipCode}>
+                      <strong>{zip.zipCode} </strong>
+                      <button>
+                        CREATE!
+                      </button>
+                      
+                    </a> 
+      }
                   </ListItem>
                 ))}
               </List>
