@@ -70,6 +70,7 @@ class Search extends Component {
             {this.state.zips.length ? (
               <List>
                 {this.state.zips.map(zip => (
+
                   <ListItem key={zip._id}>
                     <strong>
                       {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative:
