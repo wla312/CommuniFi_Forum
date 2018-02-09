@@ -74,18 +74,18 @@ class Search extends Component {
 {
         (zip.hasCommunityISP)
           ? <a href={"/search/" + zip.zipCode}>
-                      <strong>
+                      <strong>{zip.zipCode} </strong>
                       <button>
-                        JOIN
+                        JOIN!
                       </button>
-                      </strong>
+                      
                     </a>
           : <a href={"/search/" + zip.zipCode}>
-                      <strong>
+                      <strong>{zip.zipCode} </strong>
                       <button>
                         CREATE!
                       </button>
-                      </strong>
+                      
                     </a> 
       }
                   </ListItem>
