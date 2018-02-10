@@ -1,17 +1,16 @@
 .hero {
-  height: 461px;
-  background-size: auto;
+  height: 555px;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  top: -72px;
-  border: 2px solid black;
+  top: -112px;
   padding: 25px;
   background-color: #020120;
   z-index: 0;
 }
 
 .hero h1 {
-  color: white;
+  color: #FFA500;
   font-size: 60px;
   padding-top: 140px;
   margin-top: 0;

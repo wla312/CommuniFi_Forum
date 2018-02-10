@@ -34,17 +34,24 @@ const Contact = props =>
         <div id="sidePanel" class="col-md-4">
           <div>
               <p>
-                Blah Blah Blah BlahBlah Blah Blah Blah
+                Found a Mistake?
               </p>
               <p>
-                Blah Blah Blah BlahBlah Blah Blah Blah
+                Have any Suggestions?
               </p>
               <p>
-                Blah Blah Blah BlahBlah Blah Blah Blah
+                Have any Questions?
               </p>
               <p>
-                Blah Blah Blah BlahBlah Blah Blah Blah
+                Or leave a nice Comment!!
               </p>
+              <p>
+              The Team
+              Will - https://github.com/wla312
+              John - https://github.com/JohnHillgard
+              Lio - https://github.com/liotovar
+              Peter - https://github.com/plee1467
+              </p>              
           </div>
         </div>
         

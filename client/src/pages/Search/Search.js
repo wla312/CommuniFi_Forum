@@ -5,7 +5,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import SearchForm from "../../components/SearchForm";
 // import SearchResults from "../components/SearchResults";
 import { List, ListItem } from "../../components/List";
-// import Alert from "../../components/Alert";
+import Navbar from "../../components/Navbar";// import Alert from "../../components/Alert";
 // import { Input, FormBtn } from "../../components/Form";
 
 class Search extends Component {
@@ -57,6 +57,7 @@ class Search extends Component {
 
     return (
       <Container fluid>
+      <Navbar location={'search'} />
         <Row>
           <Col size="md-12">
             <SearchForm

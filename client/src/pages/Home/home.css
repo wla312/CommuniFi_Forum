@@ -1,0 +1,24 @@
+  
+ #homeDiv{
+
+
+    background-color: white;
+
+}
+
+ p {
+ 	color: 020120;
+ }
+ .text {
+ 	margin-top: -170px;
+ 	text-align: center;
+
+ }
+ 
+ #frontPage {
+ 	margin-left: 100px;
+ }
+
+#frontPageText {
+	padding-right: 65px;
+}

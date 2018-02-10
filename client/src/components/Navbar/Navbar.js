@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-
+// import Logo from "../../images/logo.png "
 
 
 const Navbar = (props) => {
@@ -58,19 +58,13 @@ const Navbar = (props) => {
 
   if (props.location === 'home') {
     styleToApply = whiteStyle
-  } else if (props.location ==='resources'){
-    styleToApply = blackStyle
-  } else if (props.location ==='contact'){
-    styleToApply = blackStyle
-  } else if (props.location ==='login'){
-    styleToApply = blackStyle
-  } else if (props.location ==='search'){
+  } else {
     styleToApply = blackStyle
   }
 
   return (
     <nav style={styleToApply.navbar} className="navbar bg-transparent">
-        <a style={styleToApply.navbarBrand} className="navbar-brand" href="/" >ISPyourself</a>
+        <a style={styleToApply.navbarBrand} className="navbar-brand" href="/"><img id="logo" src="static/media/logo.png"/></a>
           <div style={styleToApply.dropdown} className="dropdown pull-right">
             <span className="glyphicon glyphicon-menu-hamburger btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
             <ul style={styleToApply.dropdownMenu} className="dropdown-menu" aria-labelledby="dropdownMenu1">
