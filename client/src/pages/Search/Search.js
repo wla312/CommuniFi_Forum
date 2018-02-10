@@ -22,7 +22,7 @@ class Search extends Component {
 
     // function to get all zip codes (this was the first thing I tested with dummy data)
     // gets a list of all available zip codes and updates this.state.zips
-    this.loadZips();
+    // this.loadZips();
   }
 
   loadZips = () => {
@@ -70,13 +70,18 @@ class Search extends Component {
             {this.state.zips.length ? (
               <List>
                 {this.state.zips.map(zip => (
-                  <ListItem>{/*key={book._id}*/}
-                    {/*<a href={"/books/" + book._id}>*/}
+
+                  <ListItem key={zip._id}>
+                    <strong>
+                      {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative:
+                    </strong>
+                    <a href={"/search/" + zip.zipCode}>
                       <strong>
-                        {zip.zipCode} has community ISP: {zip.hasCommunityISP.toString()} {/*by {book.author}*/}
+                        <button>
+                          {zip.hasCommunityISP ? ("Join") : ("Create")}
+                        </button>
                       </strong>
-                    {/*</a>*/}
-                    {/*<DeleteBtn />*/}
+                    </a>
                   </ListItem>
                 ))}
               </List>
