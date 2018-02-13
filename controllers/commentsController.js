@@ -11,6 +11,13 @@ module.exports = {
       res.json(comments)
     });
   },
+  // findByZip: function(req, res) {
+  //   db.Comment.find().where({ zip: req.body.zip }), function(err, comments){
+  //     if (err)
+  //         res.send(err);
+  //     res.json(comments)
+  //   };
+  // },
   // post a new comment to the db
   create: function(req, res) {
   	db.Comment.create(req.body)

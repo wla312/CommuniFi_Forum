@@ -9,7 +9,8 @@ class Forum extends Component {
 	state = {
 		messages: [],
 		author: "",
-		text: ""
+		text: "",
+		// zip: ""
 	};
 
 // when the component mounts, load all messages and save them to this.state.messages
@@ -20,11 +21,12 @@ class Forum extends Component {
 		console.log(fullzipPath);
 		const zipPath = fullzipPath.slice(-5);
 		console.log(zipPath)
+		// this.setState({ zip: zipPath });
 
 		// next step, instead of this being a 'find all', we're going to have to do a 'find all where zip='
 		// will probably need to add a zip to the schema
 		// may also want to add a unique timestamp for each comment in order to sort results
-		this.loadMessagesFromServer();
+		this.loadMessagesFromServer(zipPath);
 
 	};
 
@@ -53,6 +55,7 @@ class Forum extends Component {
 			API.submitComment({
 				author: this.state.author,
 				text: this.state.text,
+				zip: this.state.zip
 			})
 			.then(res => this.loadMessagesFromServer())
 			.catch(err => console.log(err));

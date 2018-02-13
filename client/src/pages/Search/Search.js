@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
-import { Input, FormBtn } from "../../components/Form";
+// import { Input, FormBtn } from "../../components/Form";
 import { Link } from "react-router-dom";
+import SearchForm from "../../components/SearchForm";
 
 class Search extends Component {
   state = {
@@ -32,6 +33,12 @@ class Search extends Component {
       .catch(err => console.log(err));
   };
 
+  // handleInputChange = event => {
+  //   const { name, value } = event.target;
+  //   this.setState({
+  //     [name]: value
+  //   });
+  // };
   handleInputChange = event => {
     this.setState({ search: event.target.value });
   };
@@ -56,17 +63,11 @@ class Search extends Component {
       <Container fluid>
         <Row>
           <Col size="md-12">
-            <form>
-              <Input
-              value={this.state.search}
+            <SearchForm
+              handleFormSubmit={this.handleFormSubmit}
               handleInputChange={this.handleInputChange}
-              name="search"
-              placeholder="5-Digit Zip Code (required)"
-              />
-              <FormBtn
-              onClick={this.handleFormSubmit}
-              > Search </FormBtn>
-            </form>
+              zips={this.state.zips}
+            />
           </Col>
 
           <Col size="md-12">

@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const CommentsSchema = new Schema({
   author: String,
-  text: String
+  text: String,
+  zip: Number
 });
 
 const Comment = mongoose.model("Comment", CommentsSchema);

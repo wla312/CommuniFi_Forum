@@ -3,6 +3,7 @@ const commentsController = require("../../controllers/commentsController");
 
 // if the route matches "/api/comments"
 router.route("/")
+  // .get(commentsController.findByZip)
   .get(commentsController.findAll)
   .post(commentsController.create);
 

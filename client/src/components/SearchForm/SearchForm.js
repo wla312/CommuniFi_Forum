@@ -10,7 +10,7 @@ const SearchForm = props =>
         value={props.search}
         onChange={props.handleInputChange}
         name="zip"
-        list="zipss"
+        list="zips"
         type="text"
         className="form-control"
         placeholder="Enter 5-digit US Zip Code to begin"
