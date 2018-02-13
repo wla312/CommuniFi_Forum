@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
-// import Hero from "../../components/Hero";
 import { Col, Row, Container } from "../../components/Grid";
-import SearchForm from "../../components/SearchForm";
-// import SearchResults from "../components/SearchResults";
 import { List, ListItem } from "../../components/List";
-// import Alert from "../../components/Alert";
-// import { Input, FormBtn } from "../../components/Form";
+import { Input, FormBtn } from "../../components/Form";
+import { Link } from "react-router-dom";
 
 class Search extends Component {
   state = {
@@ -59,11 +56,17 @@ class Search extends Component {
       <Container fluid>
         <Row>
           <Col size="md-12">
-            <SearchForm
-              handleFormSubmit={this.handleFormSubmit}
+            <form>
+              <Input
+              value={this.state.search}
               handleInputChange={this.handleInputChange}
-              zips={this.state.zips}
-            />
+              name="search"
+              placeholder="5-Digit Zip Code (required)"
+              />
+              <FormBtn
+              onClick={this.handleFormSubmit}
+              > Search </FormBtn>
+            </form>
           </Col>
 
           <Col size="md-12">
@@ -71,17 +74,18 @@ class Search extends Component {
               <List>
                 {this.state.zips.map(zip => (
 
-                  <ListItem key={zip._id}>
+                  <ListItem key={zip.zipCode}>
                     <strong>
                       {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative:
                     </strong>
-                    <a href={"/search/" + zip.zipCode}>
+                    {/*<a href={"/search/" + zip.zipCode}>*/}
+                    <Link to={"/messageBoard/" + zip.zipCode }>
                       <strong>
                         <button>
                           {zip.hasCommunityISP ? ("Join") : ("Create")}
                         </button>
                       </strong>
-                    </a>
+                    </Link>
                   </ListItem>
                 ))}
               </List>
