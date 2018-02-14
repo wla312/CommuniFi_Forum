@@ -8,8 +8,17 @@ const Contact = props =>
   <Navbar location={'contact'} />
     <div class="container">
 
+    <div class="row frontHeader">
+      <div class="col-md-12">
+        <h1>Reach out to Us!</h1>
+          <h2>Let us know how we can improve!
+          </h2>
+      </div>
+    </div>
+
+
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-5">
           <h1>Contact Us</h1>
           <form>
             <div class="row">
@@ -30,29 +39,37 @@ const Contact = props =>
 
             <input id="submitBtn" class="btn pull-right btn-default" type="submit" value="Submit"/>
         </div>
+
+        <div class="col-md-2">
+        </div>
         
-        <div id="sidePanel" class="col-md-4">
-          <div>
-              <p>
-                Found a Mistake?
-              </p>
-              <p>
-                Have any Suggestions?
-              </p>
-              <p>
-                Have any Questions?
-              </p>
-              <p>
-                Or leave a nice Comment!!
-              </p>
-              <p>
-              The Team
-              Will - https://github.com/wla312
-              John - https://github.com/JohnHillgard
-              Lio - https://github.com/liotovar
-              Peter - https://github.com/plee1467
-              </p>              
-          </div>
+        <div id="sidePanel" class="col-md-5">
+            <div id="basicInfo">
+              <h3>
+                CommuniFi
+              </h3>
+              <h4> <span class="glyphicons glyphicons-map-marker"></span>
+                Chicago, IL
+              </h4>
+              <h4>
+                (312)-xxx-xxx
+              </h4>
+              <h4>
+                info@communifi.com
+              </h4>
+            </div>
+            <div id="team">
+              <h3>The Team
+              </h3>
+                <h4>Will - https://github.com/wla312
+                </h4>
+                <h4>John - https://github.com/JohnHillgard
+                </h4>
+                <h4>Lio - https://github.com/liotovar
+                </h4>
+                <h4>Peter - https://github.com/plee1467
+                </h4>
+            </div>
         </div>
         
     </div>
