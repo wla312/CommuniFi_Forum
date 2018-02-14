@@ -11,13 +11,33 @@ module.exports = {
       res.json(comments)
     });
   },
+  // find all in the comments collection with a matching zip
+// model.find({
+//     '_id': { $in: [
+//         mongoose.Types.ObjectId('4ed3ede8844f0f351100000c'),
+//         mongoose.Types.ObjectId('4ed3f117a844e0471100000d'), 
+//         mongoose.Types.ObjectId('4ed3f18132f50c491100000e')
+//     ]}
+// }, function(err, docs){
+//      console.log(docs);
+// });
+
+
+
   // findByZip: function(req, res) {
-  //   db.Comment.find().where({ zip: req.body.zip }), function(err, comments){
-  //     if (err)
-  //         res.send(err);
-  //     res.json(comments)
-  //   };
+  //   db.Comment.find().where({ zip: req.params.zip })
+  //     .then(dbModel => res.json(dbModel))
+  //     .catch(err => res.status(422).json(err));
   // },
+
+  findByZip: function(req, res) {
+    db.Comment.find({ 'zip': req.params.zip }, function(err, comments){
+      if (err)
+        res.send(err);
+      //responds with a json object of our database comments.
+      res.json(comments)
+    });
+  },
   // post a new comment to the db
   create: function(req, res) {
   	db.Comment.create(req.body)

@@ -8,9 +8,11 @@ router.route("/")
   .post(commentsController.create);
 
 // Matches with "/api/comments/:comment_id"
-router
-  .route("/:comment_id")
-  .put(commentsController.findById)
-  .delete(commentsController.remove);
+router.route("/:zip")
+	.get(commentsController.findByZip)
+  // .route("/:comment_id")
+  // .put(commentsController.findById)
+  // .delete(commentsController.remove);
+
 
 module.exports = router;

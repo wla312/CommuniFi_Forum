@@ -4,7 +4,10 @@ import Forum from "../../components/Forum"
 
 const Message = props => 
 	<div>
-		<Forum urlFromParent={`${props.match.url}`} />
+		<Forum 
+			urlFromParent={`${props.match.url}`}
+			zipcode={props.match.params.zip} 
+		/>
 		{/*<CommentBox 
 		url='http://localhost:3001/api/comments'
 		pollInterval={2000} />*/}

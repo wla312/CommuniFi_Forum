@@ -10,7 +10,7 @@ router.route("/")
 router
   .route("/:zip")
   .get(zipcodesController.findByZip)
-  // .put(booksController.update)
+  .put(zipcodesController.update);
   // .delete(booksController.remove);
 
 module.exports = router;
