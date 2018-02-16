@@ -20,10 +20,16 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "jsonwebtoken": "^8.1.1",
     "mongoose": "^4.11.7",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-local": "^1.0.0",
     "react-router-dom": "^4.1.2",
-    "seed": "^0.4.4"
+    "seed": "^0.4.4",
+    "validator": "^9.4.0"
   }
 }

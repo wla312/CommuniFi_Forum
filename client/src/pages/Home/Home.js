@@ -10,6 +10,7 @@ const Home = props =>
   <Navbar location={'home'}/>
     <Hero backgroundImage={ Background }>
       <h1>CommuniFi</h1>
+      <a href="/api/google"> Login</a>
       <Link to={`${props.match.url}search`} className="btn btn-default">
         Search Community-Led ISPs In Your Area
       </Link> {" "}

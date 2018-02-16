@@ -7,6 +7,8 @@ import Search from "./pages/Search";
 import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
 
+
+
 const App = () =>
   <Router>
     <Wrapper>
