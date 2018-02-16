@@ -6,11 +6,11 @@ router.route("/")
   .get(zipcodesController.findAll);
 //   .post(booksController.create);
 
-// Matches with "/api/books/:zip"
+// Matches with "/api/zipcodes/:zip"
 router
   .route("/:zip")
   .get(zipcodesController.findByZip)
-  // .put(booksController.update)
+  .put(zipcodesController.update);
   // .delete(booksController.remove);
 
 module.exports = router;
