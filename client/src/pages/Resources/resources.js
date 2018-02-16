@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 import "./resources.css"
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 
 const Resources = props =>
   <div>
-  <Navbar location={'resources'} />
+  {/*<Navbar location={'resources'} />*/}
     <div class="container">
 
       <div class="row resourceBorder">

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 import "./contact.css";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 
 const Contact = props =>
   <div>
-  <Navbar location={'contact'} />
+  {/*<Navbar location={'contact'} />*/}
     <div class="container">
 
       <div class="row">

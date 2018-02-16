@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
-
-// import Navbar from "../../components/Navbar";// import Alert from "../../components/Alert";
-
+// import Navbar from "../../components/Navbar";
+// import Alert from "../../components/Alert";
 // import { Input, FormBtn } from "../../components/Form";
 import { Link } from "react-router-dom";
 import SearchForm from "../../components/SearchForm";
@@ -23,7 +22,7 @@ class Search extends Component {
 
     // function to get all zip codes (this was the first thing I tested with dummy data)
     // gets a list of all available zip codes and updates this.state.zips
-    // this.loadZips();
+    this.loadZips();
   }
 
   loadZips = () => {
