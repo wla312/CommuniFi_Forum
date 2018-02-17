@@ -1,13 +1,10 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 import "./resources.css"
-import Navbar from "../../components/Navbar";
 import ResourcesPreview from '../../components/ResourcesPreview'
 
 const Resources = props =>
   <div>
-    <Navbar location={'resources'} />
-
     <div id="resourcesHeader">
       <h1>Resources</h1>
     </div>

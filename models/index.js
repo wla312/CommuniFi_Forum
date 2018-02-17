@@ -1,3 +1,4 @@
 module.exports = {
-  ZipCode: require("./zip")
+  ZipCode: require("./zip"),
+  Comment: require("./comments")
 };

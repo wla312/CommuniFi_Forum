@@ -15,5 +15,15 @@ module.exports = {
   		.find().where({ zipCode : req.params.zip })
   		.then(dbModel => res.json(dbModel))
     	.catch(err => res.status(422).json(err));
+  },
+  update: function(req, res) {
+    db.ZipCode
+      .findOneAndUpdate({ zipCode : req.params.zip }, { hasCommunityISP: true })
+      .then(console.log("boolean toggle success!"))
+      .catch(err => res.status(422).json(err));
   }
+  // update: function(req, res) {
+  //   db.ZipCode
+  //     .findOneAndUpdate({})
+  // }
 };

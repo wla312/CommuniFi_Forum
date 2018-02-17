@@ -3,15 +3,12 @@ import Hero from "../../components/Hero";
 import Background from "../../images/lightpollution_heatmap.jpeg"
 import { Link, Route } from "react-router-dom";
 import Search from "../Search";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 import "./home.css";
 
 
 const Home = props =>
   <div id="homeDiv">
-
-    <Navbar location={'home'} />
-
       <Hero backgroundImage={ Background }>
         <h1>CommuniFi</h1>
         <Link to={`${props.match.url}search`} className="btn btn-default">
