@@ -6,7 +6,7 @@ import Navbar from "../../components/Navbar";
 const Contact = props =>
   <div>
   <Navbar location={'contact'} />
-    <div class="container">
+    <div id="mainContainer" class="container">
 
     <div class="row frontHeader">
       <div class="col-md-12">
@@ -17,7 +17,7 @@ const Contact = props =>
     </div>
 
 
-      <div class="row">
+      <div id="contactPage" class="row">
         <div class="col-md-5">
           <h1>Contact Us</h1>
           <form>

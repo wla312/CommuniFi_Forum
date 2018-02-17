@@ -1,7 +1,19 @@
-
-      body {
-        background-color: white;
+      #contactPage{
+      border: 1px solid black;
+      padding-bottom: 50px;
+      padding-top: 50px;
       }
+      body {
+        font-family: 'Nova Flat', cursive;
+        color: #6290c3;
+
+
+      }
+
+/*      .container {
+            width: 1351px;
+
+      }*/
 /*      .navbar-brand {
         color: black;
       }

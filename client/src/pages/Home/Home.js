@@ -9,7 +9,9 @@ import "./home.css";
 
 const Home = props =>
   <div id="homeDiv">
-    <Navbar location={'home'}/>
+
+    <Navbar location={'home'} />
+
       <Hero backgroundImage={ Background }>
         <h1>CommuniFi</h1>
         <Link to={`${props.match.url}search`} className="btn btn-default">

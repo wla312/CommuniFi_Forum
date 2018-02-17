@@ -1,17 +1,29 @@
-  
+ 
  #homeDiv{
 
 
     background-color: white;
 
+
 }
 
  p {
  	color: 020120;
+ 	font-family: 'Nova Flat', cursive;
+ 	color: #6290c3;
  }
+
+ h1{
+ 	font-family: 'Nova Flat', cursive;
+ 	color: #6290c3;
+
+ }
+
+ 
  .text {
  	margin-top: -170px;
  	text-align: center;
+ 	font-family: 'Nova Flat', cursive;
 
  }
  
@@ -21,4 +33,5 @@
 
 #frontPageText {
 	padding-right: 66px;
+	color: #6290c3;
 }
