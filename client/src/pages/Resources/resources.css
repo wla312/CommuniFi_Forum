@@ -21,6 +21,11 @@
     /*  .dropdown-menu li a {
         color: black;
       }*/
+      
+      #resourcesHeader{
+        text-align: center;
+        padding: 10px
+      }
 
       #submitBtn{
         margin-top: 20px;
@@ -29,13 +34,17 @@
       #sidePanel{
         padding-top: 40px;
         text-align: center;
+        margin-top: 61px;
       }
 
       .resourcesPage{
         padding:10px;
+        font-size: 20px
       }
 
       .resourceBorder {
         border: solid black 1px;
+        text-align: center;
+        vertical-align: middle;
 
       }

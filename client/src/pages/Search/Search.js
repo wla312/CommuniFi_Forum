@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
-// import Hero from "../../components/Hero";
 import { Col, Row, Container } from "../../components/Grid";
-import SearchForm from "../../components/SearchForm";
-// import SearchResults from "../components/SearchResults";
 import { List, ListItem } from "../../components/List";
-import Navbar from "../../components/Navbar";// import Alert from "../../components/Alert";
+// import Navbar from "../../components/Navbar";
+// import Alert from "../../components/Alert";
 // import { Input, FormBtn } from "../../components/Form";
+import { Link } from "react-router-dom";
+import SearchForm from "../../components/SearchForm";
 
 class Search extends Component {
   state = {
@@ -22,7 +22,7 @@ class Search extends Component {
 
     // function to get all zip codes (this was the first thing I tested with dummy data)
     // gets a list of all available zip codes and updates this.state.zips
-    // this.loadZips();
+    this.loadZips();
   }
 
   loadZips = () => {
@@ -35,6 +35,12 @@ class Search extends Component {
       .catch(err => console.log(err));
   };
 
+  // handleInputChange = event => {
+  //   const { name, value } = event.target;
+  //   this.setState({
+  //     [name]: value
+  //   });
+  // };
   handleInputChange = event => {
     this.setState({ search: event.target.value });
   };
@@ -57,7 +63,7 @@ class Search extends Component {
 
     return (
       <Container fluid>
-      <Navbar location={'search'} />
+      {/*<Navbar location={'search'} />*/}
         <Row>
           <Col size="md-12">
             <SearchForm
@@ -72,17 +78,18 @@ class Search extends Component {
               <List>
                 {this.state.zips.map(zip => (
 
-                  <ListItem key={zip._id}>
+                  <ListItem key={zip.zipCode}>
                     <strong>
                       {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative:
                     </strong>
-                    <a href={"/search/" + zip.zipCode}>
+                    {/*<a href={"/search/" + zip.zipCode}>*/}
+                    <Link to={"/messageBoard/" + zip.zipCode }>
                       <strong>
                         <button>
                           {zip.hasCommunityISP ? ("Join") : ("Create")}
                         </button>
                       </strong>
-                    </a>
+                    </Link>
                   </ListItem>
                 ))}
               </List>
