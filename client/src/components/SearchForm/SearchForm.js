@@ -4,7 +4,7 @@ import "./SearchForm.css";
 // Using the datalist element we can create autofill suggestions based on the props.zips array
 const SearchForm = props =>
   <form className="search">
-    <div className="form-group">
+    <div className="form-group text-center">
       <label htmlFor="zip">Search by Zip Code:</label>
       <input
         value={props.search}

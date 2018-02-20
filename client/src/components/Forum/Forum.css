@@ -1,0 +1,27 @@
+h1 {
+	font-family: 'Orbitron', sans-serif;
+	color: #05c371;
+}
+
+.form-control {
+	background-color: #c2e7da;
+    color: #020120;
+}
+
+.btn-success {
+	background-color: #020120;
+	font-family: 'Orbitron', sans-serif;
+	color: #05c371;
+	border: 1px solid #05c371;
+	padding: 15px;
+	/*width: 80%;*/
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+.btn-success:hover {
+	background-color: #05c371;
+	font-family: 'Orbitron', sans-serif;
+	color: #020120;
+	border: 1px solid #05c371;
+}

@@ -3,6 +3,7 @@ import API from "../../utils/API";
 import { List, ListItem } from "../List";
 import { Input, TextArea, FormBtn } from "../Form";
 import { Col, Container } from "../Grid";
+import "./Forum.css";
 // import Hero from "../Hero";
 
 class Forum extends Component {
@@ -100,7 +101,7 @@ class Forum extends Component {
 		return (
 		<Container fluid>
           <Col size="sm-12">
-            <h1>CommuniFi {this.state.zip}:</h1>
+            <h1>CommuniFi - {this.state.zip} ISP Initiative:</h1>
             	{this.state.messages.length ? (
 	              <List>
 	                {this.state.messages.map(message => {

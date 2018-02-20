@@ -1,56 +1,73 @@
       #contactPage{
-      border: 1px solid black;
+      border: 1px solid #05c371;
       padding-bottom: 50px;
       padding-top: 50px;
       }
-      body {
-        font-family: 'Nova Flat', cursive;
+
+      #mainContainer {
+        font-family: 'Orbitron', sans-serif;
         color: #6290c3;
-
-
       }
 
-/*      .container {
-            width: 1351px;
+      .frontHeader h2 {
+        color: #05c371;
+      }
 
-      }*/
-/*      .navbar-brand {
-        color: black;
+      #mainContainer h4, form {
+        font-family: 'Raleway', sans-serif;
       }
-      .navbar {
-        border-bottom: 1px solid black;
-        border-radius: 0px;
+
+      input[type="text"], textarea[type="text"] {
+        background-color: #c2e7da;
+        color: #1a1b41; 
       }
-      .dropdown {
-        padding-top: 5px;
-        color: black;
-      }
-      .dropdown-menu {
-        background-color: transparent;
-        background-color: #020120;
-        color: black;
-        border: 1px solid black;
-      }
-      .dropdown-menu li a {
-        color: black;
-      }
-*/
+
       #submitBtn{
         margin-top: 20px;
+        background-color: #05c371;
+        color: #020120;
+        border: 1px solid #05c371;
+        padding: 15px;
+      }
+
+      #submitBtn:hover {
+        margin-top: 20px;
+        background-color: #020120;
+        color: #05c371;
+        border: 1px solid #05c371;
       }
 
       #sidePanel{
         padding: 40px;
         text-align: center;
- 
       }
 
       .frontHeader {
         text-align: center;
         padding: 10px
       }
+
       #basicInfo{
-        padding: 10px
+        padding: 10px;
+        position: relative;
+      }
+
+      #basicInfo h4 {
+        position: relative;
+      }
+
+      #basicInfo span {
+        position: absolute;
+        left: 50px;
+      }
+
+      #team h4 {
+        position: relative;
+      }
+
+      #team span {
+        position: absolute;
+        left: 50px;
       }
 
 

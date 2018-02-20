@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/Hero";
-import Background from "../../images/lightpollution_heatmap.jpeg"
+// import Background from "../../images/lightpollution_heatmap.jpeg"
 import { Link, Route } from "react-router-dom";
 import Search from "../Search";
 // import Navbar from "../../components/Navbar";
@@ -9,24 +9,39 @@ import "./home.css";
 
 const Home = props =>
   <div id="homeDiv">
-      <Hero backgroundImage={ Background }>
-        <h1>CommuniFi</h1>
+    <div className="jumbotron col-sm-12">
+      <p>"Just waiting around for corporate America to come save us, we realized no one is going to come out here and make the kind of investment that’s needed"</p>{/*https://arstechnica.com/information-technology/2015/11/how-a-group-of-neighbors-created-their-own-internet-service/*/}
+      <p>"CenturyLink service was supposed to provide up to 1.5Mbps downloads speeds, but in reality we “had 700kbps sometimes, and nothing at others"</p>
+      <p>"The more competition, the better the service, faster the speeds, and lower the rates"</p>{/*https://cyber.harvard.edu/pubrelease/broadband/*/}
+      <p>"Community-owned internet service providers are better and cheaper"</p>{/*https://motherboard.vice.com/en_us/article/d345pv/harvard-study-shows-why-big-telecom-is-terrified-of-community-run-broadband*/}
+    </div>
+    <div className="col-sm-12" id="innerHomeDiv">
+      <div className="col-sm-6 text-center" id="innerImageDiv">
+      </div>
+      <div className="col-sm-6 text-center" id="homePageText">
+        <h2>What if you and your community could become your own internet service provider?</h2>
+        <br/>
+        <h4>In the U.S., we’ve collectively decided that it’s impossible to create a community owned,
+         operated and led service of any serious scale — that most of us need a corporate behemoth like Comcast or Verizon for our connections. 
+         But, the Federal Communications Commission went ahead with its deeply unpopular plan to end net neutrality protections, 
+        giving internet service providers like AT&T, Verizon, and Comcast unprecedented control of our experience online.  
+        </h4>
+        <br/>
+        <h4>Using affordable, off-the-shelf hardware and open-source software, hundreds of communities 
+        around the world are assembling small, independent, nonprofit wireless networks, often organized 
+        as so-called “mesh networks” for their weblike, decentralized design, in which each node – a phone, 
+        for instance, or a sophisticated wireless router–relays the connection onwards to the next node.
+        </h4>{/*https://www.fastcompany.com/3044686/mesh-networks-and-the-local-internet-movement*/}
+        <br/>
+        <h4>In the short time since the FCC’s net neutrality ruling, there have already been a number of new mesh internet projects popping up - 
+        what if we could encourage mesh networks to flourish, AND, create an over-arching community for user-run networks to collaborate and ultimately connect to one another?
+        With critical mass, that becomes a user-owned ISP with significant lobbying power.
+        </h4>{/*https://www.inverse.com/article/39507-mesh-networks-net-neutrality-fcc*/}
+        <br/>
         <Link to={`${props.match.url}search`} className="btn btn-default">
-          Search Community-Led ISPs In Your Area
+          Get Involved
         </Link> {" "}
         <Route exact path={`${props.match.url}search`} component={Search} />
-      </Hero>
-    <div class='text' class="row">
-          <div class="col-md-6">
-          <img id="frontPage" src="static/media/frontPagePicture.png"/>
-          </div>
-
-      <div id="frontPageText" class="col-md-6">
-        <h1>CommuniFi: The End of Your Lousy ISP</h1>
-        <p>
-          <h3> CommuniFi is a simple open-source peer to peer network that provides a platform for users around the community to connect with each other. </h3>
-          <h3> User can either join into an existing group of CommuniFi network or create a new CommuniFi network around the area. </h3>
-        </p>
       </div>
     </div>
   </div>;

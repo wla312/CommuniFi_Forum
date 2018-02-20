@@ -64,38 +64,48 @@ class Search extends Component {
     return (
       <Container fluid>
       {/*<Navbar location={'search'} />*/}
-        <Row>
-          <Col size="md-12">
-            <SearchForm
-              handleFormSubmit={this.handleFormSubmit}
-              handleInputChange={this.handleInputChange}
-              zips={this.state.zips}
-            />
+        <div className="jumbotron col-sm-12">
+          <Col size="sm-12">
+            <Col size="md-5"/>
+              <Col size="md-2">
+                <SearchForm
+                  handleFormSubmit={this.handleFormSubmit}
+                  handleInputChange={this.handleInputChange}
+                  zips={this.state.zips}
+                />
+              </Col>
+            <Col size="md-5"/>
           </Col>
+        </div>
 
-          <Col size="md-12">
-            {this.state.zips.length ? (
-              <List>
-                {this.state.zips.map(zip => (
+        <Row>
+          <Col size="sm-12">
+            <Col size="md-4"/>
+              <Col size="md-4">
+                {this.state.zips.length ? (
+                  <List>
+                    {this.state.zips.map(zip => (
 
-                  <ListItem key={zip.zipCode}>
-                    <strong>
-                      {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative:
-                    </strong>
-                    {/*<a href={"/search/" + zip.zipCode}>*/}
-                    <Link to={"/messageBoard/" + zip.zipCode }>
-                      <strong>
-                        <button>
-                          {zip.hasCommunityISP ? ("Join") : ("Create")}
-                        </button>
-                      </strong>
-                    </Link>
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>Zip Code Not Found</h3>
-            )}
+                      <ListItem key={zip.zipCode}>
+                        <strong>
+                          {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative
+                        </strong>
+                        {/*<a href={"/search/" + zip.zipCode}>*/}
+                        <Link to={"/messageBoard/" + zip.zipCode }>
+                          <strong>
+                            <button>
+                              {zip.hasCommunityISP ? ("Join") : ("Create")}
+                            </button>
+                          </strong>
+                        </Link>
+                      </ListItem>
+                    ))}
+                  </List>
+                ) : (
+                  <h3>Zip Code Not Found</h3>
+                )}
+              </Col>
+            <Col size="md-4"/>
           </Col>
         </Row>
       </Container>

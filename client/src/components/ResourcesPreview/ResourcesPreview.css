@@ -8,3 +8,12 @@
 	padding-left: 50px;
 	padding-right: 30px;
 }
+
+#resources h2 {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+#resource {
+	margin-bottom: 5px;
+}
