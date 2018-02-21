@@ -11,7 +11,7 @@
       .navbar {
         border-bottom: 1px solid #05c371;
         border-radius: 0px;
-        z-index: 2;
+        z-index: 100;
         padding: 20px;
         margin-bottom: 0px;
       }

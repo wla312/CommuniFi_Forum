@@ -58,7 +58,12 @@
   border-radius: 4px;
   padding: 8px;
   position: relative;
+  /*display: block;*/
+/*  float: right;
+  margin-bottom: 8px;*/
   left: 50px;
+  /*height: 60px;*/
+  /*margin-top: 0px;*/
 }
 
 .list-group-item button:hover {

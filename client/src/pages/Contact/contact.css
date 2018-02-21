@@ -55,6 +55,9 @@
       #basicInfo h4 {
         position: relative;
       }
+      #basicInfo h3, #team h3 {
+        color: #05c371;
+      }
 
       #basicInfo span {
         position: absolute;
