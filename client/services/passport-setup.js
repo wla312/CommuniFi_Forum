@@ -17,7 +17,7 @@ const GoogleStrategy = require('passport-google-oauth20');
 passport.use(new GoogleStrategy({  
     clientID: '290666916648-gbe1ongbbj3peuvfgoe3ebtplthn300c.apps.googleusercontent.com',
     clientSecret: 'yy0M2fRn4wqZrASNnBVrQk8e',
-    callbackURL: '/',
+    callbackURL: 'http://localhost:3000/',
   },
     function(token, refreshToken, profile, done) {
       process.nextTick(function() {

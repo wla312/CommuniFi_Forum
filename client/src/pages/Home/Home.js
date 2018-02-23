@@ -43,7 +43,7 @@ const Home = props =>
           Get Involved
         </Link> {" "}
         <Route exact path={`${props.match.url}search`} component={Search} />
-        <a href="/api/google">Login</a>
+        <a href="http://localhost:3001/api/google">Login</a>
       </div>
     </div>
   </div>;

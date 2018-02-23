@@ -44,15 +44,15 @@ app.use(express.static('./server/static/'));
 app.use(express.static('./client/dist/'));
 
 // Add routes, both API and view
-// app.use(routes);
+app.use(routes);
 // routes
-const authRoutes = require('./server/routes/auth');
-const apiRoutes = require('./server/routes/api');
-app.use('/auth', authRoutes);
+// const authRoutes = require('./server/routes/auth');
+// const apiRoutes = require('./server/routes/api');
+// app.use('/auth', authRoutes);
 app.use('/api', index);
 
 // Add routes, both API and view
-app.use(routes);
+// app.use(routes);
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
