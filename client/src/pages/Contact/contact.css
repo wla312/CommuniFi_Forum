@@ -61,7 +61,7 @@
 
       #basicInfo span {
         position: absolute;
-        left: 50px;
+        left: 53px;
       }
 
       #team h4 {
@@ -70,7 +70,11 @@
 
       #team span {
         position: absolute;
-        left: 50px;
+        left: 90px;
+      }
+
+      #team img {
+        width: 25px;
       }
 
 

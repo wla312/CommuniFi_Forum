@@ -13,7 +13,8 @@ class Search extends Component {
     search: "",
     zips: [],
     // results: [],
-    error: ""
+    error: "",
+    didFormSubmit: false
   };
 
   // When the component mounts... 
@@ -47,12 +48,13 @@ class Search extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
+
     API.getOneZip(this.state.search)
       .then(res => {
         if (res.data.status === "error") {
           throw new Error(res.data.message);
         }
-        this.setState({ zips: res.data, error: "" });
+        this.setState({ zips: res.data, error: "", didFormSubmit: true });
       })
       .catch(err => this.setState({ error: err.message }));
   };
@@ -63,7 +65,7 @@ class Search extends Component {
 
     return (
       <Container fluid>
-      // {/*<Navbar location={'search'} />
+         {/*<Navbar location={'search'} />
       //   <div className="jumbotron col-sm-12">
       //     <Col size="sm-12">
       //       <Col size="md-4"/>
@@ -81,7 +83,7 @@ class Search extends Component {
         <Row>
           <Col size="sm-12">
             <Col size="sm-12">
-              <h2>The best way to get started is at the grassroots level, with your neighbors, and your neighbors' neighbors.
+              <h2 className="text-center">The best way to get started is at the grassroots level, with your neighbors, and your neighbors' neighbors.
               </h2>
               <br/><br/><br/><br/>
             </Col>
@@ -93,7 +95,7 @@ class Search extends Component {
                   handleInputChange={this.handleInputChange}
                   zips={this.state.zips}
               />
-              {this.state.zips.length ? (
+              {this.state.didFormSubmit ? (<div>{this.state.zips.length ? (
                 <List>
                   {this.state.zips.map(zip => (
 
@@ -111,8 +113,8 @@ class Search extends Component {
                   ))}
                 </List>
               ) : (
-                <h3></h3>
-              )}
+                <h3 className="text-center">Hmmm, that's odd - we couldn't find that zip code.</h3>
+              )}</div>) : (<h3 className="text-center">After searching, you'll be given the option to either 'join' or 'create' the group for that zip code.</h3>)}
             </Col>
             <Col size="md-4 sm-2"/>
           </Col>

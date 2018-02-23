@@ -7,6 +7,7 @@ const Message = props =>
 		<Forum 
 			urlFromParent={`${props.match.url}`}
 			zipcode={props.match.params.zip} 
+			pollInterval={2000}
 		/>
 		{/*<CommentBox 
 		url='http://localhost:3001/api/comments'

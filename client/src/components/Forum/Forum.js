@@ -39,6 +39,8 @@ class Forum extends Component {
 		// may also want to add a unique timestamp for each comment in order to sort results
 		this.loadMessagesFromServer();
 
+		setInterval(this.loadMessagesFromServer, this.props.pollInterval);
+
 	};
 	// componentDidUpdate(){
 	// 	// this.loadMessagesFromServer();
@@ -92,6 +94,7 @@ class Forum extends Component {
 			})
 			.then(res => this.loadMessagesFromServer(this.props.zipcode))
 			.then(res => this.toggleISP(this.props.zipcode))
+			.then(res => this.setState({text: ""}))
 			.catch(err => console.log(err));
 		}
 		// 
@@ -102,12 +105,16 @@ class Forum extends Component {
 		<Container fluid>
           <Col size="sm-12">
           	<h1 className="text-center">{this.state.zip} Community ISP Group</h1>
+
+          	<br/>
           	  {/*<div className="fb-share-button" 
 			    data-href="https://arcane-ridge-17845.herokuapp.com/search"
 			    data-layout="button"
 			    size="large">
 			  </div>*/}
-			  <div className="text-center addthis_inline_share_toolbox"></div>
+			  <div className="sm-8 text-center addthis_inline_share_toolbox">
+			  	<h4 className="text-center">The first step for any community-run network, is to get the word out to friends and neighbors. Help spread the word and build your community group by sharing this group!</h4>
+			  </div>
 	        <Col size="sm-6">
 	          <h2>ISPs and Wireless Mesh Networks 101:</h2>
               <h4>Q: What is an 'ISP'?</h4>
@@ -122,15 +129,17 @@ class Forum extends Component {
               community-run initiatives should start with something called a 'Wireless Mesh Network'.
               </h4>
               <br/>
+              <hr/>
+              <br/>
               <h4>A great beginner's guide to wireless mesh networks can be found <a href="http://communitytechnology.github.io/docs/cck/networking/intro-to-mesh/" target="_blank" >here</a>.</h4>
               <br/>
               <h4>A great visual guide to local/community mesh network design can be found <a href="http://communitytechnology.github.io/docs/cck/networking/guidelines-for-mesh/" target="_blank" >here</a>.</h4>
               <br/>
               <h4>For more tools, tips, and news, check out our <a href="https://arcane-ridge-17845.herokuapp.com/Resources" target="_blank" >Resources</a> page.</h4>
-              <br/>
+              {/*<br/>
               <h4 className="text-center">____________________________________________</h4>
               <br/>
-              <h4 className="text-center">The first step for any community-run network, is to get the word out to friends and neighbors. Help spread the word and build your community group by sharing your group with people in your community!</h4>
+              <h4 className="text-center">The first step for any community-run network, is to get the word out to friends and neighbors. Help spread the word and build your community group by sharing your group with people in your community!</h4>*/}
               
 
 	        </Col>

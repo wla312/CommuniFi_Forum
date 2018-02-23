@@ -30,4 +30,13 @@ h1 {
 	margin-bottom: 50px;
 }
 
+hr {
+	height: 1px;
+    color: #05c371;
+    background: #05c371;
+    font-size: 0;
+    border: 0;
+}
+
+
 

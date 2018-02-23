@@ -39,11 +39,15 @@ const Home = props =>
         What if we could encourage community networks to flourish, AND, create a platform for user-run networks to collaborate and ultimately connect to one another?
         </h4>{/*https://www.inverse.com/article/39507-mesh-networks-net-neutrality-fcc*/}
         <br/>
-        <Link to={`${props.match.url}search`} className="btn btn-default">
-          Get Involved
-        </Link> {" "}
-        <Route exact path={`${props.match.url}search`} component={Search} />
-        <a href="https://arcane-ridge-17845.herokuapp.com/api/google">Login</a>
+        <div className="btn-group" role="group">
+          <Link to={`${props.match.url}search`} className="btn btn-default" id="involvedbtn">
+            Get Involved
+          </Link> {" "}
+          <Route exact path={`${props.match.url}search`} component={Search} />
+          <button type="button" className="btn" id="loginbtn">
+            <a href="https://arcane-ridge-17845.herokuapp.com/api/google">Login</a>
+          </button>
+        </div>
       </div>
     </div>
   </div>;

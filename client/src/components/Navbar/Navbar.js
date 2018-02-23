@@ -71,7 +71,7 @@ const Navbar = () => {
               <li><Link  to="/">Home</Link></li>{/*style={styleToApply.dropdownMenuATags}*/}
               <li><Link  to="/search">Search</Link></li>{/*style={styleToApply.dropdownMenuATags}*/}
               {/*<li><Link to="Login">Login</Link></li>style={styleToApply.dropdownMenuATags} */}
-              <li><Link  to="Resources">Resources</Link></li>{/*style={styleToApply.dropdownMenuATags}*/}
+              <li><Link  to="/resources">Resources</Link></li>{/*style={styleToApply.dropdownMenuATags}*/}
               <li><Link to="/contact">Contact</Link></li>{/*style={styleToApply.dropdownMenuATags} */}
             </ul>
           </div>

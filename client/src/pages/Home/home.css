@@ -9,6 +9,7 @@
   	height: 35vh;
   	color: #05c371;
   	overflow: auto;
+  	border-bottom: 1px solid #05c371;
   	/*margin-bottom: 0px;*/
  }
 
@@ -28,6 +29,10 @@
 	padding: 10px;
 }
 
+#btn-group {
+	width: 100%;
+}
+
 #homeDiv .btn {
 	/*margin-top: 100px;*/
 	background-color: #020120;
@@ -35,9 +40,11 @@
 	color: #05c371;
 	border: 1px solid #05c371;
 	padding: 15px;
-	width: 80%;
+	/*width: 80%;*/
 	font-size: 28px;
 	margin-bottom: 15px;
+	position: relative;
+	display: inline-block;
 }
 
 #homeDiv .btn:hover {
@@ -45,6 +52,27 @@
 	font-family: 'Orbitron', sans-serif;
 	color: #020120;
 	border: 1px solid #05c371;
+}
+
+#homeDiv .btn-default:hover {
+	border-right: 1px solid #020120;
+}
+
+#loginbtn {
+	background-color: #05c371 !important;
+}
+
+#loginbtn a {
+	color: #020120 !important;
+}
+
+#loginbtn:hover {
+	background-color: #020120 !important;
+}
+
+#loginbtn:hover a {
+	color: #05c371 !important;
+	text-decoration: none;
 }
 
 #homePageText {
@@ -55,6 +83,9 @@
 
 #homePageText h2 {
 	text-align: center;
+	line-height: 220%;
+/*	font-family: 'Raleway', sans-serif;
+	color: #6290c3;*/
 }
 
 

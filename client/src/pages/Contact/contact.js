@@ -15,35 +15,37 @@ const Contact = props =>
 
 
     <div id="contactPage" className="row">
+      <div className="col-md-1">
+      </div>
       <div className="col-md-5">
         <h1>Contact Us</h1>
-        <form>
+        <form action="https://formspree.io/cft1467@gmail.com" method="POST">
           <div className="row">
             <div className="form-group col-md-6">
               <label for="formGroup">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Name"/> 
+              <input name="name" type="text" class="form-control" id="name" placeholder="Name"/> 
             </div>
             <div className="form-group col-md-6">
               <label for="formGroup">Email</label>
-              <input type="text" className="form-control" id="email" placeholder="Email"/>
+              <input name="_replyto" type="email" className="form-control" id="email" placeholder="Email"/>
             </div>
           </div>
           <div>
             <label for="formGroup">Message</label>
-            <textarea type="text" className="form-control" rows="15"></textarea>
+            <textarea name="message" type="text" className="form-control" rows="10"></textarea>
           </div>
+          <input id="submitBtn" className="btn pull-right btn-default" type="submit" value="Send"/>
+          <input type="hidden" name="_next" value="contact" />
         </form>
-
-        <input id="submitBtn" className="btn pull-right btn-default" type="submit" value="Submit"/>
       </div>
 
-      <div className="col-md-2">
+      <div className="col-md-1">
       </div>
         
       <div id="sidePanel" class="col-md-5">
         <div id="basicInfo">
-            <h3>CommuniFi</h3>
-            <h4> <span className="glyphicon glyphicon-map-marker"></span>
+            <h3>CommuniFi Team</h3>
+            {/*<h4> <span className="glyphicon glyphicon-map-marker"></span>
                 Chicago, IL
             </h4>
             <h4> <span className="glyphicon glyphicon-earphone"></span>
@@ -51,19 +53,25 @@ const Contact = props =>
             </h4>
             <h4><span className="glyphicon glyphicon-envelope"></span>
                 info@communifi.com
-            </h4>
+            </h4>*/}
         </div>
         <div id="team">
-              <h3>The Team
-              </h3>
-                <h4> - Will {/*https://github.com/wla312*/}
-                </h4>
-                <h4> - John {/*https://github.com/JohnHillgard*/}
-                </h4>
-                <h4> - Lio {/*https://github.com/liotovar*/}
-                </h4>
-                <h4> - Peter {/*https://github.com/plee1467*/}
-                </h4>
+          <h4>
+            <span className="githubImg"><a href="https://github.com/JohnHillgard" target="_blank"><img src="static/media/githubIcon.png"/></a></span>
+            Jack
+          </h4>
+          <h4>
+            <span className="githubImg"><a href="https://github.com/liotovar" target="_blank"><img src="static/media/githubIcon.png"/></a></span>
+            Lio
+          </h4>
+          <h4>
+            <span className="githubImg"><a href="https://github.com/plee1467" target="_blank"><img src="static/media/githubIcon.png"/></a></span>
+            Peter
+          </h4>
+          <h4>
+            <span className="githubImg"><a href="https://github.com/wla312" target="_blank"><img src="static/media/githubIcon.png"/></a></span>
+            Will
+          </h4>
         </div>
       </div>
     </div>
