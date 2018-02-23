@@ -5,7 +5,7 @@ import { List, ListItem } from "../../components/List";
 // import Navbar from "../../components/Navbar";
 // import Alert from "../../components/Alert";
 // import { Input, FormBtn } from "../../components/Form";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import SearchForm from "../../components/SearchForm";
 
 class Search extends Component {
@@ -22,7 +22,7 @@ class Search extends Component {
 
     // function to get all zip codes (this was the first thing I tested with dummy data)
     // gets a list of all available zip codes and updates this.state.zips
-    this.loadZips();
+    // this.loadZips();
   }
 
   loadZips = () => {
@@ -63,39 +63,58 @@ class Search extends Component {
 
     return (
       <Container fluid>
-      {/*<Navbar location={'search'} />*/}
+      // {/*<Navbar location={'search'} />
+      //   <div className="jumbotron col-sm-12">
+      //     <Col size="sm-12">
+      //       <Col size="md-4"/>
+      //         <Col size="md-4">
+      //           <SearchForm
+      //             handleFormSubmit={this.handleFormSubmit}
+      //             handleInputChange={this.handleInputChange}
+      //             zips={this.state.zips}
+      //           />
+      //         </Col>
+      //       <Col size="md-4"/>
+      //     </Col>
+      //   </div>
+*/}
         <Row>
-          <Col size="md-12">
-            <SearchForm
-              handleFormSubmit={this.handleFormSubmit}
-              handleInputChange={this.handleInputChange}
-              zips={this.state.zips}
-            />
-          </Col>
+          <Col size="sm-12">
+            <Col size="sm-12">
+              <h2>The best way to get started is at the grassroots level, with your neighbors, and your neighbors' neighbors.
+              </h2>
+              <br/><br/><br/><br/>
+            </Col>
+            <Col size="md-4 sm-2">
+            </Col>
+            <Col size="md-4 sm-8">
+              <SearchForm
+                  handleFormSubmit={this.handleFormSubmit}
+                  handleInputChange={this.handleInputChange}
+                  zips={this.state.zips}
+              />
+              {this.state.zips.length ? (
+                <List>
+                  {this.state.zips.map(zip => (
 
-          <Col size="md-12">
-            {this.state.zips.length ? (
-              <List>
-                {this.state.zips.map(zip => (
-
-                  <ListItem key={zip.zipCode}>
-                    <strong>
-                      {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative:
-                    </strong>
-                    {/*<a href={"/search/" + zip.zipCode}>*/}
-                    <Link to={"/messageBoard/" + zip.zipCode }>
+                    <ListItem key={zip.zipCode}>
                       <strong>
-                        <button>
-                          {zip.hasCommunityISP ? ("Join") : ("Create")}
-                        </button>
+                        {zip.zipCode} {zip.hasCommunityISP ? ("has a") : ("does not have a")} community ISP initiative
                       </strong>
-                    </Link>
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>Zip Code Not Found</h3>
-            )}
+                      {/*<a href={"/search/" + zip.zipCode}>*/}
+                      <Link to={"/messageBoard/" + zip.zipCode }>
+                          <button>
+                            {zip.hasCommunityISP ? ("Join") : ("Create")}
+                          </button>
+                      </Link>
+                    </ListItem>
+                  ))}
+                </List>
+              ) : (
+                <h3></h3>
+              )}
+            </Col>
+            <Col size="md-4 sm-2"/>
           </Col>
         </Row>
       </Container>

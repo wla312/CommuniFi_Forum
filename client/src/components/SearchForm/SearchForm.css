@@ -1,9 +1,47 @@
 form.search {
   overflow: auto;
-  margin-bottom: 10px;
+  /*margin: 30px;*/
 }
 
 form.search button[type="submit"] {
-  float: right;
-  margin-top: 10px;
+	/*margin-top: 20px;*/
+	background-color: #05c371;
+	font-family: 'Orbitron', sans-serif;
+	color: #1a1b41;
+	/*font-size: 24px;*/
+	border: 1px solid #05c371;
+	/*padding: 16px;*/
+	position: relative;
+	display: inline-block;
+	height: 60px;
+}
+
+form.search button[type="submit"]:hover {
+	/*margin-top: 20px;*/
+	background-color: #1a1b41;
+	font-family: 'Orbitron', sans-serif;
+	color: #05c371;
+	border: 1px solid #05c371;
+	/*padding: 15px;*/
+}
+
+label {
+	font-family: 'Orbitron', sans-serif;
+	color: #05c371;
+	font-size: 24px;
+}
+
+input[name="zip"] {
+	display: block;
+	width: 60%;
+	height: 60px;
+}
+
+h2 {
+	font-family: 'Orbitron', sans-serif;
+	color: #05c371;
+}
+
+h4 {
+	color: #05c371;
 }

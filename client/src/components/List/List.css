@@ -1,9 +1,10 @@
 .list-overflow-container {
   max-height: 545px;
-  border: 1px #DDDDDD solid;
+  border: 1px #05c371 solid;
   border-radius: 4px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
+  color: #020120;
 }
 
 .list-overflow-container ul {
@@ -14,15 +15,23 @@
   border-radius: 0px;
   border-left: none;
   border-right: none;
+  /*height: 25px;*/
+  font-size: 24px;
 }
 
 .list-overflow-container li * {
   cursor: pointer;
+  color: #05c371;
 }
 
 .list-overflow-container li a {
-  color: #2A878C;
+  color: #05c371;
 }
+
+/*.list-overflow-container li {
+  border: 1px solid #1a1b41;
+  border-top: none;
+}*/
 
 .list-overflow-container li:first-child {
   border-top: none;
@@ -31,3 +40,43 @@
 .list-overflow-container li:last-child {
   border-bottom: none;
 }
+
+.list-group {
+  background-color: #020120;
+}
+
+.list-group-item {
+  background-color: #020120;
+  border: 1px #05c371 solid;
+}
+
+.list-group-item button {
+  background-color: #05c371;
+  border: 1px #05c371 solid;
+  color: #020120;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 4px;
+  padding: 8px;
+  position: relative;
+  /*display: block;*/
+/*  float: right;
+  margin-bottom: 8px;*/
+  left: 50px;
+  /*height: 60px;*/
+  /*margin-top: 0px;*/
+}
+
+.list-group-item button:hover {
+  background-color: #020120;
+  color: #05c371;
+  border: 1px #05c371 solid;
+}
+
+
+
+
+
+
+
+
+

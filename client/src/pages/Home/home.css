@@ -1,37 +1,60 @@
- 
- #homeDiv{
+#homeDiv{
+	height: 100%;
+	width: 100%;
+}
 
+.jumbotron {
+	background-image: url('../../images/5645.jpg');
+	background-size: cover;
+  	height: 35vh;
+  	color: #05c371;
+  	overflow: auto;
+  	/*margin-bottom: 0px;*/
+ }
 
-    background-color: white;
+#innerHomeDiv {
+	background-color: #020120;
+	height: 50vh;
+	/*vertical-align: middle;*/
+	color: #05c371;
+	margin-bottom: 15px;
+}
 
+#innerImageDiv {
+	background-image: url('../../images/vector-network.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+	padding: 10px;
+}
+
+#homeDiv .btn {
+	/*margin-top: 100px;*/
+	background-color: #020120;
+	font-family: 'Orbitron', sans-serif;
+	color: #05c371;
+	border: 1px solid #05c371;
+	padding: 15px;
+	width: 80%;
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+#homeDiv .btn:hover {
+	background-color: #05c371;
+	font-family: 'Orbitron', sans-serif;
+	color: #020120;
+	border: 1px solid #05c371;
+}
+
+#homePageText {
+	vertical-align: middle;
+	height: 100%;
 
 }
 
- p {
- 	color: 020120;
- 	font-family: 'Nova Flat', cursive;
- 	color: #6290c3;
- }
-
- h1{
- 	font-family: 'Nova Flat', cursive;
- 	color: #6290c3;
-
- }
-
- 
- .text {
- 	margin-top: -170px;
- 	text-align: center;
- 	font-family: 'Nova Flat', cursive;
-
- }
- 
- #frontPage {
- 	margin-left: 100px;
- }
-
-#frontPageText {
-	padding-right: 66px;
-	color: #6290c3;
+#homePageText h2 {
+	text-align: center;
 }
+
+

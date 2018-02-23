@@ -4,75 +4,75 @@ import "./Navbar.css";
 // import Logo from "../../images/logo.png "
 
 
-const Navbar = (props) => {
+const Navbar = () => {
 
-  console.log('our porps for Navbar', props); 
+  // console.log('our porps for Navbar', props); 
 
-  let styleToApply;
+  // let styleToApply;
 
-  const whiteStyle = {
-    navbarBrand: {
-      color: 'white'
-    },
-    navbar: {
-      borderBottom: '1px solid white',
-      borderRadius: '0px',
-      zIndex: 2
-    },
-    dropdown: {
-      paddingTop: '5px',
-      color: 'white'
-    },
-    dropdownMenu: {
-      backgroundColor: '#020120',
-      color: 'white',
-      border: '1px solid white'
-    },
-    dropdownMenuATags: {
-      color: 'white'
-    }
-  }
+  // const whiteStyle = {
+  //   navbarBrand: {
+  //     color: 'white'
+  //   },
+  //   navbar: {
+  //     borderBottom: '1px solid white',
+  //     borderRadius: '0px',
+  //     zIndex: 2
+  //   },
+  //   dropdown: {
+  //     paddingTop: '5px',
+  //     color: 'white'
+  //   },
+  //   dropdownMenu: {
+  //     backgroundColor: '#020120',
+  //     color: 'white',
+  //     border: '1px solid white'
+  //   },
+  //   dropdownMenuATags: {
+  //     color: 'white'
+  //   }
+  // }
 
-  const blackStyle = {
-    navbarBrand: {
-      color: 'black'
-    },
-    navbar: {
-      borderBottom: '1px solid black',
-      borderRadius: '0px'
-    },
-    dropdownMenu: {
-      backgroundColor: 'transparent',
-      backgroundColor: 'white',
-      color: 'black',
-      border: '1px solid black'
-    }, 
-    dropdown: {
-      paddingTop: '5px',
-      color: 'black'
-    },
-    dropdownMenuATags: {
-      color: 'black'
-    }
-  }
+  // const blackStyle = {
+  //   navbarBrand: {
+  //     color: 'black'
+  //   },
+  //   navbar: {
+  //     borderBottom: '1px solid black',
+  //     borderRadius: '0px'
+  //   },
+  //   dropdownMenu: {
+  //     backgroundColor: 'transparent',
+  //     backgroundColor: 'white',
+  //     color: 'black',
+  //     border: '1px solid black'
+  //   }, 
+  //   dropdown: {
+  //     paddingTop: '5px',
+  //     color: 'black'
+  //   },
+  //   dropdownMenuATags: {
+  //     color: 'black'
+  //   }
+  // }
 
-  if (props.location === 'home') {
-    styleToApply = whiteStyle
-  } else {
-    styleToApply = blackStyle
-  }
+  // if (props.location === 'home') {
+  //   styleToApply = whiteStyle
+  // } else {
+  //   styleToApply = blackStyle
+  // }
 
   return (
-    <nav style={styleToApply.navbar} className="navbar bg-transparent">
-        <a style={styleToApply.navbarBrand} className="navbar-brand" href="/"><img id="logo" src="static/media/logo.png"/></a>
-          <div style={styleToApply.dropdown} className="dropdown pull-right">
+    <nav  className="navbar bg-transparent">{/*style={styleToApply.navbar}*/}
+        <a  className="navbar-brand" href="/">CommuniFi{/*<img id="logo" src="static/media/logo.png"/>style={styleToApply.navbarBrand}*/}</a>
+          <div  className="dropdown pull-right">{/*style={styleToApply.dropdown}*/}
             <span className="glyphicon glyphicon-menu-hamburger btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
-            <ul style={styleToApply.dropdownMenu} className="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><Link style={styleToApply.dropdownMenuATags} to="/">Home</Link></li>
-              <li><Link style={styleToApply.dropdownMenuATags} to="/search">Search</Link></li>
-              <li><Link style={styleToApply.dropdownMenuATags} to="Login">Login</Link></li>
-              <li><Link style={styleToApply.dropdownMenuATags} to="Resources">Resources</Link></li>
-              <li><Link style={styleToApply.dropdownMenuATags} to="/contact">Contact</Link></li>
+            <ul  className="dropdown-menu" aria-labelledby="dropdownMenu1">{/*style={styleToApply.dropdownMenu}*/}
+              <li><Link  to="/">Home</Link></li>{/*style={styleToApply.dropdownMenuATags}*/}
+              <li><Link  to="/search">Search</Link></li>{/*style={styleToApply.dropdownMenuATags}*/}
+              {/*<li><Link to="Login">Login</Link></li>style={styleToApply.dropdownMenuATags} */}
+              <li><Link  to="Resources">Resources</Link></li>{/*style={styleToApply.dropdownMenuATags}*/}
+              <li><Link to="/contact">Contact</Link></li>{/*style={styleToApply.dropdownMenuATags} */}
             </ul>
           </div>
     </nav>

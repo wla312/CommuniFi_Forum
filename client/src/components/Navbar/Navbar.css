@@ -1,36 +1,50 @@
 
       .navbar-brand {
-        color: white;
+        font-family: 'Orbitron', sans-serif;
+        color: #05c371;
+      }
+
+      .navbar-brand:hover, .glyphicon:hover {
+        color: #c2e7da;
       }
 
       .navbar {
-        border-bottom: 10px solid white;
+        border-bottom: 1px solid #05c371;
         border-radius: 0px;
-        z-index: 2;
-        padding: 20px
+        z-index: 100;
+        padding: 20px;
+        margin-bottom: 0px;
       }
 
       .dropdown {
         padding-top: 5px;
-        color: white;
+        color: #05c371;
       }
 
       .dropdown-menu {
         /*background-color: transparent;*/
         background-color: #020120;
-        color: white;
-        border: 1px solid white;
+        color: #05c371;
+        border: 1px solid #05c371;
       }
 
       .dropdown-menu li a {
-        color: white;
+        font-family: 'Orbitron', sans-serif;
+        color: #05c371;
       }
 
-      #logo {
+      .dropdown-menu li a:hover {
+        background-color: #05c371;
+        color: #020120;
+      }
+
+
+
+/*      #logo {
         width: 150px;
         height: 100px;
         margin-top: -40px;
         margin-left: -25px
-      }
+      }*/
 
 
