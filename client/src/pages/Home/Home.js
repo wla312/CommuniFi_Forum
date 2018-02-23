@@ -43,7 +43,7 @@ const Home = props =>
           Get Involved
         </Link> {" "}
         <Route exact path={`${props.match.url}search`} component={Search} />
-        <a href="http://localhost:3001/api/google">Login</a>
+        <a href="https://https://arcane-ridge-17845.herokuapp.com/api/google">Login</a>
       </div>
     </div>
   </div>;
