@@ -2,7 +2,7 @@ import React from "react";
 import "./ResourcesPreview.css";
 
 const ResourcesPreview = props => {
-	console.log('these are our props in ResourcesPreview', props);
+	// console.log('these are our props in ResourcesPreview', props);
 	return (
 	  <div id="resources">
 	  	<div className="container" id="resource">

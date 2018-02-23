@@ -22,7 +22,7 @@ class Search extends Component {
 
     // function to get all zip codes (this was the first thing I tested with dummy data)
     // gets a list of all available zip codes and updates this.state.zips
-    this.loadZips();
+    // this.loadZips();
   }
 
   loadZips = () => {
@@ -80,27 +80,14 @@ class Search extends Component {
 */}
         <Row>
           <Col size="sm-12">
-            <Col size="md-5 sm-6">
-              <h2>ISPs and Wireless Mesh Networks 101:</h2>
-              <h4>Q: What is an 'ISP'?</h4>
-              <h4>A: An Internet service provider (ISP) is an organization that provides services accessing and using the Internet.</h4>
-              <br/>
-              <h4>Q: What is a 'WISP'?</h4>
-              <h4>A: A wireless Internet service provider (WISP) is an Internet service provider with a network based on wireless networking.</h4>
-              <br/>
-              <h4>Q: I don't know a thing about ISPs or network design, how do I know where to begin on my community project?</h4>
-              <h4>A: We strongly believe the best way to get started is at the grassroots level, with your neighbors, and your neighbors' neighbors.
-              That is why we break down community ISP initiatives by zip code.
-              </h4>
-              <br/>
-              <h4>Q: What does a community network look like?</h4>
-              <h4>A: There are many ways to design a community wireless network - but too many options can lead to confusion! Fortunately, many community 
-              networks and Wireless Internet Service Providers (WISPs) have had many years of experience that we can learn from. We strongly believe all local
-              community-run initiatives should start with something called a 'Wireless Mesh Network'.
-              </h4>
+            <Col size="sm-12">
+              <h2>The best way to get started is at the grassroots level, with your neighbors, and your neighbors' neighbors.
+              </h2>
+              <br/><br/><br/><br/>
             </Col>
-            <Col size="md-2 sm-0"/>
-            <Col size="md-5 sm-6">
+            <Col size="md-4 sm-2">
+            </Col>
+            <Col size="md-4 sm-8">
               <SearchForm
                   handleFormSubmit={this.handleFormSubmit}
                   handleInputChange={this.handleInputChange}
@@ -124,10 +111,10 @@ class Search extends Component {
                   ))}
                 </List>
               ) : (
-                <h3>Zip Code Not Found</h3>
+                <h3></h3>
               )}
             </Col>
-            {/*<Col size="md-4"/>*/}
+            <Col size="md-4 sm-2"/>
           </Col>
         </Row>
       </Container>

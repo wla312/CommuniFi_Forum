@@ -10,6 +10,7 @@ import "./home.css";
 const Home = props =>
   <div id="homeDiv">
     <div className="jumbotron col-sm-12 text-center">
+    <h1>What if you and your community could become your own internet service provider?</h1>
       {/*<p>"Just waiting around for corporate America to come save us, we realized no one is going to come out here and make the kind of investment that’s needed"</p>{/*https://arstechnica.com/information-technology/2015/11/how-a-group-of-neighbors-created-their-own-internet-service/*/}
       {/*<p>"CenturyLink service was supposed to provide up to 1.5Mbps downloads speeds, but in reality we “had 700kbps sometimes, and nothing at others"</p>
       <p>"The more competition, the better the service, faster the speeds, and lower the rates"</p>{/*https://cyber.harvard.edu/pubrelease/broadband/*/}
@@ -22,12 +23,12 @@ const Home = props =>
       <div className="col-sm-6 text-center" id="innerImageDiv">
       </div>
       <div className="col-sm-6 text-center" id="homePageText">
-        <h2>What if you and your community could become your own internet service provider?</h2>
-        <br/>
-        <h4>Using affordable, off-the-shelf hardware and open-source software, hundreds of communities 
+        {/*<h2>What if you and your community could become your own internet service provider?</h2>
+        <br/>*/}
+        <h2>Using affordable, off-the-shelf hardware and open-source software, hundreds of communities 
         around the world are assembling small, independent, nonprofit wireless networks. 
-        </h4>
-        <br/>
+        </h2>
+        {/*<br/>
         <h4>But in the U.S., we’ve collectively decided that it’s impossible to create a community owned,
          operated, and led service of any serious scale — that most of us need a corporate behemoth like Comcast or Verizon for our connections. 
          To make matters worse, the Federal Communications Commission went ahead with its deeply unpopular plan to end net neutrality protections, 

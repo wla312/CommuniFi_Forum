@@ -6,7 +6,7 @@
 .jumbotron {
 	background-image: url('../../images/5645.jpg');
 	background-size: cover;
-  	height: 50vh;
+  	height: 35vh;
   	color: #05c371;
   	overflow: auto;
   	/*margin-bottom: 0px;*/
@@ -53,8 +53,8 @@
 
 }
 
-#homePageText h4 {
-	text-align: left;
+#homePageText h2 {
+	text-align: center;
 }
 
 
