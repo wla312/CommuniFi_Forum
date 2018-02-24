@@ -35,7 +35,7 @@ const Contact = props =>
             <textarea name="message" type="text" className="form-control" rows="10"></textarea>
           </div>
           <input id="submitBtn" className="btn pull-right btn-default" type="submit" value="Send"/>
-          <input type="hidden" name="_next" value="contact" />
+          <input type="hidden" name="_next" value="/contact" />
         </form>
       </div>
 

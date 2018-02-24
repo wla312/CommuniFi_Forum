@@ -135,7 +135,7 @@ class Forum extends Component {
               <br/>
               <h4>A great visual guide to local/community mesh network design can be found <a href="http://communitytechnology.github.io/docs/cck/networking/guidelines-for-mesh/" target="_blank" >here</a>.</h4>
               <br/>
-              <h4>For more tools, tips, and news, check out our <a href="https://arcane-ridge-17845.herokuapp.com/Resources" target="_blank" >Resources</a> page.</h4>
+              <h4>For more tools, tips, and news, check out our <a href="https://arcane-ridge-17845.herokuapp.com/resources" target="_blank" >Resources</a> page.</h4>
               {/*<br/>
               <h4 className="text-center">____________________________________________</h4>
               <br/>
