@@ -57,20 +57,17 @@ const Contact = props =>
         </div>
         <div id="team">
           <h4>
-            <span className="githubImg"><a href="https://github.com/JohnHillgard" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}</a></span>
-            Jack
+            <span className="githubImg"><a href="https://github.com/JohnHillgard" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}Jack</a></span>
           </h4>
           <h4>
-            <span className="githubImg"><a href="https://github.com/liotovar" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}</a></span>
-            Lio
+            <span className="githubImg"><a href="https://github.com/liotovar" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}Lio</a></span>
           </h4>
           <h4>
-            <span className="githubImg"><a href="https://github.com/plee1467" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}</a></span>
-            Peter
+            <span className="githubImg"><a href="https://github.com/plee1467" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}Peter</a></span>
+            
           </h4>
           <h4>
-            <span className="githubImg"><a href="https://github.com/wla312" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}</a></span>
-            Will
+            <span className="githubImg"><a href="https://github.com/wla312" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}Will</a></span>
           </h4>
         </div>
       </div>
