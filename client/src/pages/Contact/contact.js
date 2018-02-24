@@ -57,19 +57,19 @@ const Contact = props =>
         </div>
         <div id="team">
           <h4>
-            <span className="githubImg"><a href="https://github.com/JohnHillgard" target="_blank"><img src="static/media/githubIcon.png"/></a></span>
+            <span className="githubImg"><a href="https://github.com/JohnHillgard" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}</a></span>
             Jack
           </h4>
           <h4>
-            <span className="githubImg"><a href="https://github.com/liotovar" target="_blank"><img src="static/media/githubIcon.png"/></a></span>
+            <span className="githubImg"><a href="https://github.com/liotovar" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}</a></span>
             Lio
           </h4>
           <h4>
-            <span className="githubImg"><a href="https://github.com/plee1467" target="_blank"><img src="static/media/githubIcon.png"/></a></span>
+            <span className="githubImg"><a href="https://github.com/plee1467" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}</a></span>
             Peter
           </h4>
           <h4>
-            <span className="githubImg"><a href="https://github.com/wla312" target="_blank"><img src="static/media/githubIcon.png"/></a></span>
+            <span className="githubImg"><a href="https://github.com/wla312" target="_blank">{/*<img src="static/media/githubIcon.png"/>*/}</a></span>
             Will
           </h4>
         </div>
